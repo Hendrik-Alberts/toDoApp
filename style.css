@@ -43,14 +43,27 @@ h2 {
 li {
   color: #264653;
   border: 0.1em solid #264653;
-  background-color: #f4a261;
   margin: 0em 0.5em 0.5em 1em;
   font-weight: 800;
   text-align: left;
+  list-style-type: none;
+}
+
+li:nth-child(odd) {
+  background-color: #f4a261;
+}
+
+li:nth-child(even) {
+  background-color: #96ee9b;
 }
 
 li:hover {
   text-shadow: 0 0 2em rgba(255, 255, 255, 1);
   color: #ffffff;
   border-color: #ffffff;
+}
+
+/* This is the X button to the right of every task */
+#xout {
+  float: right;
 }
